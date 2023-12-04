@@ -291,15 +291,59 @@ var WP_Statistics_Tracker_Object = {"hitRequestUrl":"https:\/\/www.textgames.org
 
 
 <p style="text-align: justify">
-<span style="color: #ffcc00;"><i class="fas fa-star"></i></span> <a href="https://www.semanticscholar.org/paper/VMAgent%3A-A-Practical-Virtual-Machine-Scheduling-Sheng-Cai/eae59a98fceeec7b6d229bb960ee3f5536ae6049" style="color: #54a1cb; text-decoration: none; font-weight: 600;">VMAgent: A Practical Virtual Machine Scheduling Platform</a><br>
-<span style="color: #808080;">Junjie Sheng, Shengliang Cai, Haochuan Cui, Wenhao Li, Yun Hua, Bo Jin, Wenli Zhou, Yiqiu Hu, Lei Zhu, Qian Peng, Hongyuan Zha, Xiangfeng Wang — IJCAI 2022 (Demo Track)</span>
-<br>Abstract: Virtual machine (VM) scheduling is one of the critical tasks in cloud computing. Many works have attempted to incorporate machine learning, especially reinforcement learning, to empower VM scheduling procedures. Although improved results are shown in several demo simulators, the performances in real-world scenarios are still underexploited. In this paper, we design a practical VM scheduling platform, i.e., VMAgent, to assist researchers in developing their methods on the VM scheduling problem. VMAgent consists of three components: simulator, scheduler, and visualizer. The simulator abstracts three general realistic scheduling scenarios (fading, recovering, and expansion) based on Huawei Cloud’s scheduling data, which is the core of our platform. Flexible configurations are further provided to make the simulator compatible with practical cloud computing architecture (i.e., Multi Non-Uniform Memory Access) and scenarios. Researchers then need to instantiate the scheduler to interact with the simulator, which is also pre-built in various types (e.g., heuristic, machine learning, and operations research) of scheduling algorithms to speed up the algorithm design. The visualizer, as an auxiliary component of the simulator and scheduler, facilitates researchers to conduct an in-depth analysis of the scheduling procedure and comprehensively compare different scheduling algorithms.</br>
+<span style="color: #ffcc00;"><i class="fas fa-star"></i></span> <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320321004349" style="color: #54a1cb; text-decoration: none; font-weight: 600;">Learning to schedule multi-NUMA virtual machines via reinforcement learning</a><br>
+<span style="color: #808080;">Junjie Sheng, Yiqiu Hu, Wenli Zhou, Lei Zhu, Bo Jin, Jun Wang, Xiangfeng Wang — PR 2022 </span>
+<br>Abstract: With the rapid development of cloud computing, the importance of dynamic virtual machine scheduling is increasing. Existing works formulate the VM scheduling as a bin-packing problem and design greedy methods to solve it. However, cloud service providers widely adopt multi-NUMA architecture servers in recent years, and existing methods do not consider the architecture. This paper formulates the multi-NUMA VM scheduling into a novel structured combinatorial optimization and transforms it into a reinforcement learning problem. We propose a reinforcement learning algorithm called SchedRL with a delta reward scheme and an episodic guided sampling strategy to solve the problem efficiently. Evaluating on a public dataset of Azure under two different scenarios, our SchedRL outperforms FirstFit and BestFit on the fulfill number and allocation rate.</br>
 <a href="https://github.com/mail-ecnu/VMAgent" target="_blank" style="color: #909090; text-decoration: none; font-size: calc(100% - 4pt);" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Project Website</a><br>
 <a href="https://rl4or.github.io/#environment" style="text-decoration: none;"><span style="background-color: #FFDFC2; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i class="fas fa-puzzle-piece"></i> environment</span> </a><a href="https://rl4or.github.io/#simulator" style="text-decoration: none;"><span style="background-color: #C7DDEC; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i class="fas fa-atom"></i> simulator</span> </a><a href="https://rl4or.github.io/#agent" style="text-decoration: none;"><span style="background-color: #F4C9C9; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i class="fas fa-chess-knight"></i> agent</span> </a><a href="https://rl4or.github.io/#data" style="text-decoration: none;"><span style="background-color: #E4D9EE; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i class="fas fa-book"></i> data</span> </a><a href="https://rl4or.github.io/#position" style="text-decoration: none;"><span style="background-color: #E2D4D2; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i class="fas fa-lightbulb"></i> position</span> </a><a href="https://rl4or.github.io/#sharedtask" style="text-decoration: none;"><span style="background-color: #F8DDEF; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i class="fas fa-users"></i> sharedtask</span> </a><a href="https://rl4or.github.io/#survey" style="text-decoration: none;"><span style="background-color: #EEEEC7; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i class="fas fa-map"></i> survey</span> </a><a href="https://rl4or.github.io/#other" style="text-decoration: none;"><span style="background-color: #C5EEF3; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i class="fas fa-circle-question"></i> other</span> </a>
 </p>
 <p> &nbsp;  </p>
 <p><a name="data"></a></p>
 
+<p style="text-align: justify">
+	<span style="color: #ffcc00;"><i class="fas fa-star"></i></span> <a
+		href="dl.acm.org/doi/abs/10.1145/3543507.3583298"
+		style="color: #54a1cb; text-decoration: none; font-weight: 600;">Learning Cooperative Oversubscription for Cloud by Chance-Constrained Multi-Agent Reinforcement Learning</a><br>
+	<span style="color: #808080;">Junjie Sheng, Yiqiu Hu, Wenli Zhou, Lei Zhu, Bo Jin, Jun Wang, Xiangfeng Wang — PR
+		2022 </span>
+	<br>Abstract: Oversubscription is a common practice for improving cloud resource utilization. It allows the cloud service provider to
+	sell more resources than the physical limit, assuming not all users would fully utilize the resources simultaneously.
+	However, how to design an oversubscription policy that improves utilization while satisfying the some safety constraints
+	remains an open problem. Existing methods and industrial practices are over-conservative, ignoring the coordination of
+	diverse resource usage patterns and probabilistic constraints. To address these two limitations, this paper formulates
+	the oversubscription for cloud as a chance-constrained optimization problem and propose an effective Chance Constrained
+	Multi-Agent Reinforcement Learning (C2MARL) method to solve this problem. Specifically, C2MARL reduces the number of
+	constraints by considering their upper bounds and leverages a multi-agent reinforcement learning paradigm to learn a
+	safe and optimal coordination policy. We evaluate our C2MARL on an internal cloud platform and public cloud datasets.
+	Experiments show that our C2MARL outperforms existing methods in improving utilization (20%∼86%) under different levels
+	of safety constraints.</br>
+	<a href="https://github.com/mail-ecnu/VMAgent" target="_blank"
+		style="color: #909090; text-decoration: none; font-size: calc(100% - 4pt);" rel="noopener"><i
+			class="fas fa-arrow-up-right-from-square"></i> Project Website</a><br>
+	<a href="https://rl4or.github.io/#environment" style="text-decoration: none;"><span
+			style="background-color: #FFDFC2; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i
+				class="fas fa-puzzle-piece"></i> environment</span> </a><a href="https://rl4or.github.io/#agent"
+		style="text-decoration: none;"><span
+			style="background-color: #F4C9C9; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i
+				class="fas fa-chess-knight"></i> agent</span> </a><a href="https://rl4or.github.io/#data"
+		style="text-decoration: none;"><span
+			style="background-color: #E4D9EE; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i
+				class="fas fa-book"></i> data</span> </a><a href="https://rl4or.github.io/#position"
+		style="text-decoration: none;"><span
+			style="background-color: #E2D4D2; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i
+				class="fas fa-lightbulb"></i> position</span> </a><a href="https://rl4or.github.io/#sharedtask"
+		style="text-decoration: none;"><span
+			style="background-color: #F8DDEF; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i
+				class="fas fa-users"></i> sharedtask</span> </a><a href="https://rl4or.github.io/#survey"
+		style="text-decoration: none;"><span
+			style="background-color: #EEEEC7; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i
+				class="fas fa-map"></i> survey</span> </a><a href="https://rl4or.github.io/#other"
+		style="text-decoration: none;"><span
+			style="background-color: #C5EEF3; padding: 5px 10px; border-radius: 50px; font-size: calc(100% - 4pt);"><i
+				class="fas fa-circle-question"></i> other</span> </a>
+</p>
+<p> &nbsp; </p>
+<p><a name="data"></a></p>
 
 <h3 class="wp-block-heading"><span style="color:#9467bd"> <i class="fas fa-circle"></i> Data </span></h3>
 <p><b>Papers that describe data or resources.</b></p>
